@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - TYDesignableLabel (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - TYDesignableLabel (from `../`)
+
+EXTERNAL SOURCES:
+  TYDesignableLabel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  TYDesignableLabel: 642746db7ead47bf4dd43463e984a7802cedb1bc
+
+PODFILE CHECKSUM: 90bd1999fd7f4cd733cd1a8f35aa2c9fd4ed1000
+
+COCOAPODS: 1.3.1

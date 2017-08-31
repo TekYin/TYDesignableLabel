@@ -25,6 +25,10 @@
     [self renderText];
 }
 
+- (void)setText:(NSString *)text { // update styling when text change
+    super.text = text;
+    [self renderText];
+}
 
 - (void)renderText {
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:self.text];

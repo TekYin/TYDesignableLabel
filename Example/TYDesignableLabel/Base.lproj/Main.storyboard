@@ -23,21 +23,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAF-jz-eAG" customClass="TYDesignableLabel">
-                                <rect key="frame" x="36" y="40" width="303" height="202.5"/>
+                                <rect key="frame" x="36" y="40" width="303" height="142.5"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="extraLineSpacing">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="extraHeadIndent">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16T-TF-e5Q">
+                                <rect key="frame" x="36" y="207" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="vAF-jz-eAG" secondAttribute="trailing" constant="20" id="2r5-pH-LCt"/>
+                            <constraint firstItem="16T-TF-e5Q" firstAttribute="top" secondItem="vAF-jz-eAG" secondAttribute="bottom" constant="24.5" id="6N6-DX-g1E"/>
+                            <constraint firstItem="16T-TF-e5Q" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="20" id="QUf-Te-cqh"/>
                             <constraint firstItem="vAF-jz-eAG" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="20" id="iN0-9R-ujz"/>
                             <constraint firstItem="vAF-jz-eAG" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="20" id="uHP-Jc-qI3"/>
                         </constraints>

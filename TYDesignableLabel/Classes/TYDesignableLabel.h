@@ -9,4 +9,8 @@ IB_DESIGNABLE
 @interface TYDesignableLabel : UILabel
 
 @property(nonatomic, assign) IBInspectable CGFloat extraLineSpacing;
+@property(nonatomic, assign) IBInspectable CGFloat extraFirstLineHeadIndent;
+@property(nonatomic, assign) IBInspectable CGFloat extraHeadIndent;
+
+
 @end

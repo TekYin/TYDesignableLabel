@@ -31,17 +31,31 @@
 }
 
 - (void)renderText {
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:self.text];
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineSpacing:_extraLineSpacing];
-    [style setFirstLineHeadIndent:_extraFirstLineHeadIndent];
-    [style setHeadIndent:_extraHeadIndent];
-    style.alignment = self.textAlignment;
-    [attrString addAttribute:NSParagraphStyleAttributeName
-                       value:style
-                       range:NSMakeRange(0, self.text.length)];
-    self.attributedText = attrString;
+    if(self.text != nil){
+        NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:self.text];
+        NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+        [style setLineSpacing:_extraLineSpacing];
+        [style setFirstLineHeadIndent:_extraFirstLineHeadIndent];
+        [style setHeadIndent:_extraHeadIndent];
+        style.alignment = self.textAlignment;
+        [attrString addAttribute:NSParagraphStyleAttributeName
+                           value:style
+                           range:NSMakeRange(0, self.text.length)];
+        self.attributedText = attrString;
+    }
+}
 
+- (void)setExtraPadding:(NSString *)extraPadding {
+    self.padding = UIEdgeInsetsFromString(extraPadding);
+    [self renderText];
+    [self invalidateIntrinsicContentSize];
+}
+
+- (CGSize)intrinsicContentSize {
+    CGSize intrinsicSuperViewContentSize = [super intrinsicContentSize];
+    intrinsicSuperViewContentSize.height += self.padding.top + self.padding.bottom;
+    intrinsicSuperViewContentSize.width += self.padding.left + self.padding.right;
+    return intrinsicSuperViewContentSize;
 }
 
 @end

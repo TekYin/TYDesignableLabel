@@ -11,6 +11,9 @@ IB_DESIGNABLE
 @property(nonatomic, assign) IBInspectable CGFloat extraLineSpacing;
 @property(nonatomic, assign) IBInspectable CGFloat extraFirstLineHeadIndent;
 @property(nonatomic, assign) IBInspectable CGFloat extraHeadIndent;
+@property(nonatomic, assign) IBInspectable NSString *extraPadding;
+
+@property(nonatomic) UIEdgeInsets padding;
 
 
 @end

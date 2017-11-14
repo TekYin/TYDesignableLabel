@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - TYDesignableLabel (0.1.0)
+  - TYDesignableLabel (0.1.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  TYDesignableLabel: 642746db7ead47bf4dd43463e984a7802cedb1bc
+  TYDesignableLabel: 1a3192fa24fe2fb76eceb7128c3090687c3d8433
 
 PODFILE CHECKSUM: 90bd1999fd7f4cd733cd1a8f35aa2c9fd4ed1000
 
